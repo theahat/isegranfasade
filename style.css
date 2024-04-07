@@ -1,0 +1,12 @@
+.produkt {
+    border-style: solid;
+    max-width: 21.87rem !important;
+    min-width: 21.87rem;
+    text-align: center;
+}
+
+.debug {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ff0000;
+}
