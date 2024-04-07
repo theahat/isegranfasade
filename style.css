@@ -1,7 +1,6 @@
 .produkt {
     border-style: solid;
-    max-width: 21.87rem !important;
-    min-width: 21.87rem;
+    width: 22rem;
     text-align: center;
 }
 
