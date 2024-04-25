@@ -1,5 +1,8 @@
 .produkt {
-    border-style: solid;
+    /* border-style: solid; */
+    /* border-color: #aaaaaa; */
+    /* border-radius: 5px; */
+    box-shadow: 5px 5px 5px #aaaaaa;
     width: 22rem;
     text-align: center;
 }
