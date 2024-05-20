@@ -8,7 +8,7 @@
   <useGitCommitId>false</useGitCommitId>
   <useSnapshot>false</useSnapshot>
   <gitCommitIdLength>8</gitCommitIdLength>
-  <nonQualifierBranches>master</nonQualifierBranches>
+  <nonQualifierBranches>main</nonQualifierBranches>
   <useDefaultBranchingPolicy>true</useDefaultBranchingPolicy>
   <exclusions>    <!-- Optional list of directory path -->
     <exclusion>.m2</exclusion>    <!-- relative path from project root directory -->
