@@ -14,8 +14,8 @@
     <div class="container justify-content-around pt-5">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 gy-5">
             <div th:each="produkt: ${produkter}" class="produkt col">
-                <a th:href="@{/produkter/{title}(title=${produkt.title})}" class="logo"><img th:src="${produkt.bilde}" alt="Bilde av produkt" style="max-width:100%; max-height:100%;"></a>
-                <h3 th:text="${produkt.title}"></h3>
+                <a th:href="@{/produkter/{id}(id=${produkt.id})}" class="logo"><img th:src="${produkt.bilde}" alt="Bilde av produkt" style="max-width:100%; max-height:100%;"></a>
+                <h3 th:text="${produkt.navn}"></h3>
                 <p th:text="${produkt.bio}"></p>
                 <p>Pris fra: <span th:text="${produkt.pris}"></span></p>
             </div>

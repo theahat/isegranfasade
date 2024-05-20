@@ -1,0 +1,2 @@
+export SPRING_CLOUD_CONFIG_USERNAME=$(op read op://dev/spring-cloud-config-server/username)
+export SPRING_CLOUD_CONFIG_PASSWORD=$(op read op://dev/spring-cloud-config-server/password)
