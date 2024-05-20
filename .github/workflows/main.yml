@@ -1,9 +1,9 @@
-name: Build latest master and deploy
+name: Build latest main and deploy
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:

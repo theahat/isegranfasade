@@ -1,4 +1,4 @@
-name: Build latest master and deploy
+name: Build tag and deploy
 
 on:
   push:
