@@ -11,8 +11,6 @@
     <groupId>theahat</groupId>
     <artifactId>isegranfasade</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
-    <description>demo</description>
     <properties>
         <java.version>21</java.version>
     </properties>
@@ -35,10 +33,30 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+          <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>build-info</id>
+                <goals>
+                  <goal>build-info</goal>
+                </goals>
+              </execution>
+              <execution>
+                <goals>
+                  <goal>build-image-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <image>
+                <builder>dashaun/builder:tiny</builder>
+                <name>theahat/${project.artifactId}:v${project.version}-${os.detected.arch}
+                </name>
+              </image>
+            </configuration>
+          </plugin>
         </plugins>
     </build>
 
